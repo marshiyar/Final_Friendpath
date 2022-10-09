@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <!-- <script defer src="other.js"></script> -->
+    <div id="map_canvas"></div>
+    <script defer src="script.js"></script>
+    <title>Friendpath // Reach out to your</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h1 class="namepath">Friendpath</h1>
+
+      <ul class="workouts">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Type</label>
+            <select class="form__input form__input--type">
+              <option value="Freinds">Students</option>
+              <option value="Teachers">Teachers</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label class="form__label">Distance</label>
+            <input class="form__input form__input--distance" placeholder="km" />
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+      </ul>
+      <div class="online">
+        <h3>Your Friends</h3>
+        <ul>
+          <li>
+            <a
+              href="https://lh3.googleusercontent.com/CTudK7VWTx_rA7oBJd1uQZyeN2pZomxqgwYnyWJfiU2uIn568GJahx4dDY9hS3bLqXM=w2400?source=screenshot.guru%22%3E"
+              >Aaron M.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/cFgj-8UJ_PsQG0lWOmgad4WqMppTMQaAvN86WQb6kLy4smXdgKdRlCMA0zs2l1xadWc=w2400?source=screenshot.guru%22%3E "
+              >Maggie S.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/TaRHpekJENLlKUTkP6oGDGIdQboOzShbxnCVA9gd7RJIOyrP1lt6sdeySHjCamoJx44=w2400?source=screenshot.guru%22%3E "
+              >Mohammad R.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/uvPOWFIDoGaTd6BXhNNYhW4U0FT8u4ICA-HwUzyEwubjVDoTdT--3p0dskb4NSEKdeE=w2400?source=screenshot.guru%22%3E"
+              >Raiki O.</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="Suggestion">
+        <h3>Suggestion</h3>
+        <ul>
+          <li>
+            <a
+              href="https://lh4.googleusercontent.com/C2ddE8Gh-oMc-S84AtkOa06W7RTOV1oDs1PLbbJC3E4XmcqscAPkL2kdAjKjetwXYUQ=w2400?source=screenshot.guru%22%3E"
+              >John D.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://lh3.googleusercontent.com/nWAp-qrszFSa02QhUcam7jAbLKF1fu3ZRpNqjsRrHfT2edH9-nxMhqxlowQVx2FtMMc=w2400?source=screenshot.guru%22%3E "
+              >Mary S.</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">
+        &copy; Copyright by
+        <a>Friendpath</a>. use for Friendship purposes
+      </p>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
